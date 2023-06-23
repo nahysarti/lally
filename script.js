@@ -1,3 +1,6 @@
 function togglemode() {
-  alert('conteúdo sensível!+18')
+  alert('Sensitive Content')
+}
+function togglemode1() {
+  alert("Conteudo sensível")
 }
