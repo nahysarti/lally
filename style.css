@@ -2,14 +2,23 @@
   margin: 0;
   padding: 0;
 }
+h2 {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+}
 
 body {
-  background: url(./assets/lally.jpeg) no-repeat top center/cover;
+  background: url(./assets/fundopinkwhite.jpg) no-repeat top center/cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body * {
   font-family: "Courgette", cursive;
-  color: #ffffff;
+  color: black;
 }
 
 #container {
@@ -24,13 +33,16 @@ body * {
 }
 
 #profile img {
-  width: 112px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 #profile p {
   font-weight: 400;
   line-height: 24px;
-  margin-top: 8px;
+  margin-top: 0px;
+  font-size: 24px;
 }
 
 /* links */
@@ -48,7 +60,6 @@ ul li a {
 
 
   padding: 16px 24px;
-
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 64px;
@@ -62,6 +73,21 @@ ul li a:hover {
   border: 1.5px solid white;
 }
 
+.tremble-animation {
+  animation-name: tremble;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes tremble {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+  75% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
 /* icon */
 li img {
   display:flex;
@@ -70,6 +96,21 @@ li img {
 li a p {
 width: 100%;
 text-align: center;
+}
+
+
+#social-links ion-icon {
+  color: black;
+
+}
+
+#social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+  padding: 24px 0;
+  font-size: 20px;
 }
 
 /* margin-right: 5rem;*/
